@@ -1,0 +1,49 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title > h1 {
+  font-family: "OngleipParkDahyeon";
+  font-size: 4.8rem;
+  font-weight: 100;
+  color: #eeeeee;
+  text-align: center;
+  margin-top: 15rem;
+}
+
+.title > h2 {
+  font-family: "OngleipParkDahyeon";
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: #eeeeee;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.title > h2 > b {
+  color: #fc3333;
+  font-size: 2.8rem;
+}
+
+/* 반응형 */
+@media screen and (max-width: 768px) {
+  .title {
+    width: 100%;
+  }
+
+  .title > h1 {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .title > h2 {
+    font-size: 1.15rem;
+  }
+
+  .title > h2 > b {
+    font-size: 2rem;
+  }
+}

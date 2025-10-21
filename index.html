@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body></body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/startScreen.css" />
+    <link rel="stylesheet" href="css/title.css" />
+    <link rel="stylesheet" href="css/status.css" />
+    <link rel="stylesheet" href="css/question.css" />
+    <link rel="stylesheet" href="css/answer.css" />
+    <link rel="stylesheet" href="css/result.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <!-- 시작화면 -->
+    <div id="startScreen" class="startScreen">
+      <h1 class="load">♤ 문장 작성하기 게임 ¢</h1>
+      <h2 class="infor">제한 시간내 10개의 문장을 작성해주세요!</h2>
+      <button id="start" class="start">START</button>
+    </div>
+
+    <!-- 제목 -->
+    <div class="title">
+      <h1>♧ 제한 시간내 10개의 문장을 작성해주세요! ♧</h1>
+      <h2>기억이 안난다면 아래 힌트 버튼을 눌러 힌트를 사용할 수 있어요. <br /><b>단, 기회는 1번뿐이니 주의하세요!</b></h2>
+    </div>
+
+    <!-- 레벨, 점수, 기회 -->
+    <div class="status">
+      <span class="level">레벨: 1/10</span>
+      <span class="score">점수: 0</span>
+      <span class="life">기회: ❤️❤️❤️</span>
+    </div>
+
+    <!-- 문제 맞추는 곳 -->
+    <section class="question">
+      <article>
+        <!-- 타이머 -->
+        <div id="timer"><i class="ri-alarm-line"></i></div>
+        <!-- 힌트,다시도전-->
+        <div class="menu">
+          <div id="hint" class="hint">£ 힌트</div>
+          <div id="retry" class="retry">† RETRY</div>
+        </div>
+      </article>
+
+      <!-- 문장 -->
+      <div id="setences" class="setences">안녕하세요.</div>
+    </section>
+
+    <!-- 답 쓰는 곳 -->
+    <section class="answer">
+      <input id="input" placeholder=" 문장을 작성해주세요." type="text" />
+      <button id="butn">확인</button>
+    </section>
+
+    <!-- 결과 -->
+    <section class="result">
+      <h2>🎉 결과 발표 🎉</h2>
+      <p class="final-score">최종 점수: 0점</p>
+      <button class="replay-btn">† RETRY †</button>
+    </section>
+  </body>
+</html>
